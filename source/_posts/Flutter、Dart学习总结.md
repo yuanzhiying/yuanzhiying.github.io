@@ -1,7 +1,11 @@
 ---
 title: Flutter、Dart学习总结
 date: 2020-12-08 15:37:16
-tags: [flutter]
+categories:
+- Flutter
+tags:
+- Flutter
+- Dart
 ---
 - #### Container
 添加 padding, margins, borders, background color, 或将其他装饰添加到widget
@@ -34,7 +38,7 @@ DefaultTextStyle.merge可以允许您创建一个默认的文本样式，该样�
 - #### flutter的json转为实体类插件（Android Studio插件）
 AS中搜索插件`FlutterJsonBeanFactory `，安装，重启AS。
 在指定目录下，右键，new - dart bean class File From JSON，粘贴进json，格式化，生成即可。
-![路径](https://upload-images.jianshu.io/upload_images/2988687-b38ed2f78df0bcec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![2988687-b38ed2f78df0bcec.png](Flutter、Dart学习总结/2988687-b38ed2f78df0bcec.png)
 - #### dart中export使用
 在A库中使用export关键字引入B库，当我们使用A库的时候，会自动引入B库，也就是说我们导入了A库，就可以使用B库了。
 - #### cupertino下push的同时，隐藏tabbar
