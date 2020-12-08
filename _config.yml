@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: yuanzhiying的博客
+subtitle: '工作学习记录'
+description: '坚持下去'
 keywords:
-author: John Doe
-language: en
+author: yuanzhiying
+language: zh-CN
 timezone: ''
 
 # URL
@@ -41,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -107,3 +107,17 @@ deploy:
   repo: https://github.com/yuanzhiying/yuanzhiying.github.io.git
   # example, https://github.com/hexojs/hexojs.github.io
   branch: master
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+symbols_count_time:
+ #文章内是否显示
+  symbols: true
+  time: true
+ # 网页底部是否显示
+  total_symbols: true
+  total_time: true
