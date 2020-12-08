@@ -17,11 +17,10 @@
 
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="Container添加 padding, margins, borders, background color, 或将其他装饰添加到widget Scaffold使用Scaffold是最容易的，它是 Material Components库中的一个widget，它提供了一个默认banner，背景颜色，并且具有添加drawer，snack bar和底部sheet的API DefaultTextSt">
 <meta property="og:type" content="article">
@@ -30,13 +29,14 @@
 <meta property="og:site_name" content="yuanzhiying的博客">
 <meta property="og:description" content="Container添加 padding, margins, borders, background color, 或将其他装饰添加到widget Scaffold使用Scaffold是最容易的，它是 Material Components库中的一个widget，它提供了一个默认banner，背景颜色，并且具有添加drawer，snack bar和底部sheet的API DefaultTextSt">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2988687-b38ed2f78df0bcec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://example.com/2020/12/08/Flutter%E3%80%81Dart%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/2988687-b38ed2f78df0bcec.png">
 <meta property="article:published_time" content="2020-12-08T07:37:16.000Z">
-<meta property="article:modified_time" content="2020-12-08T07:37:53.603Z">
+<meta property="article:modified_time" content="2020-12-08T08:04:54.865Z">
 <meta property="article:author" content="yuanzhiying">
-<meta property="article:tag" content="flutter">
+<meta property="article:tag" content="Flutter">
+<meta property="article:tag" content="Dart">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/2988687-b38ed2f78df0bcec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:image" content="http://example.com/2020/12/08/Flutter%E3%80%81Dart%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/2988687-b38ed2f78df0bcec.png">
 
 
 <link rel="canonical" href="http://example.com/2020/12/08/Flutter%E3%80%81Dart%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">
@@ -94,7 +94,7 @@
 <link rel="alternate" href="/atom.xml" title="yuanzhiying的博客" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="headband"></div>
 
   <main class="main">
@@ -130,10 +130,10 @@
 <nav class="site-nav">
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
-        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
-        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
         <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -208,10 +208,16 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -282,7 +288,16 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2020-12-08 15:37:16 / 修改时间：15:37:53" itemprop="dateCreated datePublished" datetime="2020-12-08T15:37:16+08:00">2020-12-08</time>
+      <time title="创建时间：2020-12-08 15:37:16 / 修改时间：16:04:54" itemprop="dateCreated datePublished" datetime="2020-12-08T15:37:16+08:00">2020-12-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Flutter/" itemprop="url" rel="index"><span itemprop="name">Flutter</span></a>
+        </span>
     </span>
 
   
@@ -333,7 +348,7 @@
 </ol>
 <ul>
 <li><h4 id="flutter的Key"><a href="#flutter的Key" class="headerlink" title="flutter的Key"></a>flutter的Key</h4><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/fc88c0774078">Flutter–&gt;何时需要使用到key？</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3b2bc9f0ddd6">flutter 中的 key</a></li>
-<li><h4 id="flutter的json转为实体类插件（Android-Studio插件）"><a href="#flutter的json转为实体类插件（Android-Studio插件）" class="headerlink" title="flutter的json转为实体类插件（Android Studio插件）"></a>flutter的json转为实体类插件（Android Studio插件）</h4>AS中搜索插件<code>FlutterJsonBeanFactory </code>，安装，重启AS。<br>在指定目录下，右键，new - dart bean class File From JSON，粘贴进json，格式化，生成即可。<br><img src="https://upload-images.jianshu.io/upload_images/2988687-b38ed2f78df0bcec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="路径"></li>
+<li><h4 id="flutter的json转为实体类插件（Android-Studio插件）"><a href="#flutter的json转为实体类插件（Android-Studio插件）" class="headerlink" title="flutter的json转为实体类插件（Android Studio插件）"></a>flutter的json转为实体类插件（Android Studio插件）</h4>AS中搜索插件<code>FlutterJsonBeanFactory </code>，安装，重启AS。<br>在指定目录下，右键，new - dart bean class File From JSON，粘贴进json，格式化，生成即可。<br><img src="2988687-b38ed2f78df0bcec.png" alt="2988687-b38ed2f78df0bcec.png"></li>
 <li><h4 id="dart中export使用"><a href="#dart中export使用" class="headerlink" title="dart中export使用"></a>dart中export使用</h4>在A库中使用export关键字引入B库，当我们使用A库的时候，会自动引入B库，也就是说我们导入了A库，就可以使用B库了。</li>
 <li><h4 id="cupertino下push的同时，隐藏tabbar"><a href="#cupertino下push的同时，隐藏tabbar" class="headerlink" title="cupertino下push的同时，隐藏tabbar"></a>cupertino下push的同时，隐藏tabbar</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Navigator.of(context, rootNavigator: true)</span><br><span class="line">          .push(CupertinoPageRoute(builder: (BuildContext context) &#123;</span><br><span class="line">        return new MsgCenterPage();</span><br><span class="line">      &#125;));</span><br></pre></td></tr></table></figure></li>
 <li><h4 id="flutter使用16进制色值"><a href="#flutter使用16进制色值" class="headerlink" title="flutter使用16进制色值"></a>flutter使用16进制色值</h4>Color(0xFFFF8A65)其中0x后面的两位FF表示透明度16进制，FF后面为色值</li>
@@ -389,7 +404,8 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
 </div>
 
           <div class="post-tags">
-              <a href="/tags/flutter/" rel="tag"># flutter</a>
+              <a href="/tags/Flutter/" rel="tag"># Flutter</a>
+              <a href="/tags/Dart/" rel="tag"># Dart</a>
           </div>
 
         
@@ -482,7 +498,7 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
 
   
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+<script src="/js/utils.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
 
   
 

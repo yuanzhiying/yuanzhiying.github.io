@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
-    
-    <lastmod>2020-12-08</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/categories/index.html</loc>
     
     <lastmod>2020-12-08</lastmod>
@@ -24,6 +17,13 @@
   
   <url>
     <loc>http://example.com/tags/index.html</loc>
+    
+    <lastmod>2020-12-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/about/index.html</loc>
     
     <lastmod>2020-12-08</lastmod>
     
@@ -39,12 +39,26 @@
 
   
   <url>
-    <loc>http://example.com/tags/flutter/</loc>
+    <loc>http://example.com/tags/Flutter/</loc>
+    <lastmod>2020-12-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Dart/</loc>
     <lastmod>2020-12-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
 
+  
+  <url>
+    <loc>http://example.com/categories/Flutter/</loc>
+    <lastmod>2020-12-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
