@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2020/12/09/npm%E3%80%81nvm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%B7%98%E5%AE%9D%E6%BA%90/</loc>
+    <loc>http://yuanzhiying.github.io/2020/12/09/npm%E3%80%81nvm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%B7%98%E5%AE%9D%E6%BA%90/</loc>
     
     <lastmod>2020-12-09</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2020/12/08/Flutter%E3%80%81Dart%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
+    <loc>http://yuanzhiying.github.io/2020/12/08/Flutter%E3%80%81Dart%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
     
     <lastmod>2020-12-08</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>http://yuanzhiying.github.io/categories/index.html</loc>
     
     <lastmod>2020-12-08</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>http://yuanzhiying.github.io/tags/index.html</loc>
     
     <lastmod>2020-12-08</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>http://yuanzhiying.github.io/about/index.html</loc>
     
     <lastmod>2020-12-08</lastmod>
     
@@ -38,7 +38,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>http://yuanzhiying.github.io/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -46,21 +46,21 @@
 
   
   <url>
-    <loc>http://example.com/tags/Flutter/</loc>
+    <loc>http://yuanzhiying.github.io/tags/Flutter/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Dart/</loc>
+    <loc>http://yuanzhiying.github.io/tags/Dart/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/hexo/</loc>
+    <loc>http://yuanzhiying.github.io/tags/hexo/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -69,14 +69,14 @@
 
   
   <url>
-    <loc>http://example.com/categories/Flutter/</loc>
+    <loc>http://yuanzhiying.github.io/categories/Flutter/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/hexo/</loc>
+    <loc>http://yuanzhiying.github.io/categories/hexo/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

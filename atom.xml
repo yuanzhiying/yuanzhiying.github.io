@@ -3,11 +3,11 @@
   <title>yuanzhiying的博客</title>
   
   <subtitle>工作学习记录</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://yuanzhiying.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://yuanzhiying.github.io/"/>
   <updated>2020-12-09T02:23:06.379Z</updated>
-  <id>http://example.com/</id>
+  <id>http://yuanzhiying.github.io/</id>
   
   <author>
     <name>yuanzhiying</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>npm、nvm使用国内淘宝源</title>
-    <link href="http://example.com/2020/12/09/npm%E3%80%81nvm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%B7%98%E5%AE%9D%E6%BA%90/"/>
-    <id>http://example.com/2020/12/09/npm%E3%80%81nvm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%B7%98%E5%AE%9D%E6%BA%90/</id>
+    <link href="http://yuanzhiying.github.io/2020/12/09/npm%E3%80%81nvm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%B7%98%E5%AE%9D%E6%BA%90/"/>
+    <id>http://yuanzhiying.github.io/2020/12/09/npm%E3%80%81nvm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%B7%98%E5%AE%9D%E6%BA%90/</id>
     <published>2020-12-09T02:21:45.000Z</published>
     <updated>2020-12-09T02:23:06.379Z</updated>
     
@@ -38,17 +38,17 @@
     
     
     
-    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    <category term="hexo" scheme="http://yuanzhiying.github.io/categories/hexo/"/>
     
     
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    <category term="hexo" scheme="http://yuanzhiying.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Flutter、Dart学习总结</title>
-    <link href="http://example.com/2020/12/08/Flutter%E3%80%81Dart%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
-    <id>http://example.com/2020/12/08/Flutter%E3%80%81Dart%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</id>
+    <link href="http://yuanzhiying.github.io/2020/12/08/Flutter%E3%80%81Dart%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    <id>http://yuanzhiying.github.io/2020/12/08/Flutter%E3%80%81Dart%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</id>
     <published>2020-12-08T07:37:16.000Z</published>
     <updated>2020-12-08T08:13:31.032Z</updated>
     
@@ -63,12 +63,12 @@
     
     
     
-    <category term="Flutter" scheme="http://example.com/categories/Flutter/"/>
+    <category term="Flutter" scheme="http://yuanzhiying.github.io/categories/Flutter/"/>
     
     
-    <category term="Flutter" scheme="http://example.com/tags/Flutter/"/>
+    <category term="Flutter" scheme="http://yuanzhiying.github.io/tags/Flutter/"/>
     
-    <category term="Dart" scheme="http://example.com/tags/Dart/"/>
+    <category term="Dart" scheme="http://yuanzhiying.github.io/tags/Dart/"/>
     
   </entry>
   
