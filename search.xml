@@ -57,4 +57,30 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
         <tag>Dart</tag>
       </tags>
   </entry>
+  <entry>
+    <title>npm、nvm使用国内淘宝源</title>
+    <url>/2020/12/09/npm%E3%80%81nvm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%B7%98%E5%AE%9D%E6%BA%90/</url>
+    <content><![CDATA[<ul>
+<li>npm：</li>
+</ul>
+<ol>
+<li>显示当前的镜像地址：<code>npm get registry</code></li>
+<li>更换为淘宝的镜像地址：<code>npm config set registry http://registry.npm.taobao.org</code></li>
+<li>再次查看当前的镜像地址：<code>npm get registry</code></li>
+</ol>
+<ul>
+<li>nvm：</li>
+</ul>
+<ol>
+<li><code>.bash_profile</code>文件中添加：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export NVM_NODEJS_ORG_MIRROR&#x3D;http:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;node</span><br><span class="line">export NVM_IOJS_ORG_MIRROR&#x3D;http:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;iojs</span><br></pre></td></tr></table></figure></li>
+<li>执行<code>source ~/.bash_profile</code>起效</li>
+</ol>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
 </search>
