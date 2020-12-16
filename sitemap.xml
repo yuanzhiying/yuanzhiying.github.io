@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yuanzhiying.github.io/2020/12/16/hexo%E5%87%BA%E7%8E%B0%E6%8A%A5%E9%94%99%EF%BC%9AERROR-Deployer-not-found-git/</loc>
+    
+    <lastmod>2020-12-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yuanzhiying.github.io/2020/12/09/npm%E3%80%81nvm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%B7%98%E5%AE%9D%E6%BA%90/</loc>
     
     <lastmod>2020-12-09</lastmod>
@@ -39,7 +46,7 @@
 
   <url>
     <loc>http://yuanzhiying.github.io/</loc>
-    <lastmod>2020-12-09</lastmod>
+    <lastmod>2020-12-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -47,21 +54,21 @@
   
   <url>
     <loc>http://yuanzhiying.github.io/tags/Flutter/</loc>
-    <lastmod>2020-12-09</lastmod>
+    <lastmod>2020-12-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/tags/Dart/</loc>
-    <lastmod>2020-12-09</lastmod>
+    <lastmod>2020-12-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/tags/hexo/</loc>
-    <lastmod>2020-12-09</lastmod>
+    <lastmod>2020-12-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -70,14 +77,14 @@
   
   <url>
     <loc>http://yuanzhiying.github.io/categories/Flutter/</loc>
-    <lastmod>2020-12-09</lastmod>
+    <lastmod>2020-12-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/categories/hexo/</loc>
-    <lastmod>2020-12-09</lastmod>
+    <lastmod>2020-12-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
