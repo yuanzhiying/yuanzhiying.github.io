@@ -6,7 +6,7 @@
   <link href="http://yuanzhiying.github.io/atom.xml" rel="self"/>
   
   <link href="http://yuanzhiying.github.io/"/>
-  <updated>2020-12-16T08:50:54.767Z</updated>
+  <updated>2020-12-16T09:12:05.044Z</updated>
   <id>http://yuanzhiying.github.io/</id>
   
   <author>
@@ -17,34 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试shell</title>
-    <link href="http://yuanzhiying.github.io/2020/12/16/%E6%B5%8B%E8%AF%95shell/"/>
-    <id>http://yuanzhiying.github.io/2020/12/16/%E6%B5%8B%E8%AF%95shell/</id>
-    <published>2020-12-16T08:47:42.000Z</published>
-    <updated>2020-12-16T08:50:54.767Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li>1111</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;1111&lt;/li&gt;
-&lt;/ul&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>hexo常用命令</title>
     <link href="http://yuanzhiying.github.io/2020/12/16/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://yuanzhiying.github.io/2020/12/16/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2020-12-16T08:12:17.000Z</published>
-    <updated>2020-12-16T08:28:21.247Z</updated>
+    <updated>2020-12-16T09:12:05.044Z</updated>
     
     <content type="html"><![CDATA[<ol><li><code>npm install --save hexo-deployer-git</code><br>如果出现<code>ERROR Deployer not found: git</code>报错，可以使用<code>npm install --save hexo-deployer-git</code>命令解决。</li></ol>]]></content>
     
@@ -57,6 +34,10 @@
     
     
     
+    <category term="hexo" scheme="http://yuanzhiying.github.io/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="http://yuanzhiying.github.io/tags/hexo/"/>
     
   </entry>
   

@@ -64,6 +64,12 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
 <li><code>npm install --save hexo-deployer-git</code><br>如果出现<code>ERROR Deployer not found: git</code>报错，可以使用<code>npm install --save hexo-deployer-git</code>命令解决。</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>npm、nvm使用国内淘宝源</title>
@@ -90,13 +96,5 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
       <tags>
         <tag>hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>测试shell</title>
-    <url>/2020/12/16/%E6%B5%8B%E8%AF%95shell/</url>
-    <content><![CDATA[<ul>
-<li>1111</li>
-</ul>
-]]></content>
   </entry>
 </search>
