@@ -6,7 +6,7 @@
   <link href="http://yuanzhiying.github.io/atom.xml" rel="self"/>
   
   <link href="http://yuanzhiying.github.io/"/>
-  <updated>2020-12-16T09:12:05.044Z</updated>
+  <updated>2020-12-24T08:35:02.773Z</updated>
   <id>http://yuanzhiying.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Xcode清除缓存相关文件</title>
+    <link href="http://yuanzhiying.github.io/2020/12/24/Xcode%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/"/>
+    <id>http://yuanzhiying.github.io/2020/12/24/Xcode%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/</id>
+    <published>2020-12-24T08:34:00.000Z</published>
+    <updated>2020-12-24T08:35:02.773Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考文章：<a href="https://www.jianshu.com/p/9c88b782c6dd">Xcode清除缓存相关文件</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;参考文章：&lt;a href=&quot;https://www.jianshu.com/p/9c88b782c6dd&quot;&gt;Xcode清除缓存相关文件&lt;/a&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>iMac合并融合硬盘</title>
+    <link href="http://yuanzhiying.github.io/2020/12/21/iMac%E5%90%88%E5%B9%B6%E8%9E%8D%E5%90%88%E7%A1%AC%E7%9B%98/"/>
+    <id>http://yuanzhiying.github.io/2020/12/21/iMac%E5%90%88%E5%B9%B6%E8%9E%8D%E5%90%88%E7%A1%AC%E7%9B%98/</id>
+    <published>2020-12-21T15:46:55.000Z</published>
+    <updated>2020-12-22T01:40:32.237Z</updated>
+    
+    <content type="html"><![CDATA[<p>官方文档：<a href="https://support.apple.com/zh-cn/HT207584">https://support.apple.com/zh-cn/HT207584</a></p><h2 id="使用“终端”重新创建融合硬盘"><a href="#使用“终端”重新创建融合硬盘" class="headerlink" title="使用“终端”重新创建融合硬盘 "></a>使用“终端”重新创建融合硬盘 </h2><p>以下步骤将永久删除融合硬盘所含驱动器上储存的所有数据。在继续之前，请确保您进行了<a href="https://support.apple.com/zh-cn/HT201250">备份</a>。 </p><h3 id="如果您使用的是-macOS-Mojave-或更高版本"><a href="#如果您使用的是-macOS-Mojave-或更高版本" class="headerlink" title="如果您使用的是 macOS Mojave 或更高版本"></a>如果您使用的是 macOS Mojave 或更高版本</h3><ol><li> 将 Mac 开机，然后立即按住 Command-R 以<a href="https://support.apple.com/zh-cn/HT201314">通过 macOS 恢复功能启动</a>。在看到 Apple 标志或旋转的地球时松开这些键。</li><li> 当您看到“macOS 实用工具”窗口时，请从菜单栏中选取“实用工具”&gt;“终端”。</li><li> 在“终端”窗口中键入 <code>diskutil resetFusion</code>，然后按 Return 键。</li><li> 在出现提示时键入 <code>Yes</code>（<em>Y</em> 需要大写），然后按 Return 键。</li><li> 当“终端”指示操作成功时，退出“终端”以返回“macOS 实用工具”窗口。</li><li> 选取“<a href="https://support.apple.com/zh-cn/HT204904">重新安装 macOS</a>”，然后按照屏幕上的说明操作，以重新安装 Mac 操作系统。完成后，Mac 将从您的融合硬盘重新启动。</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;官方文档：&lt;a href=&quot;https://support.apple.com/zh-cn/HT207584&quot;&gt;https://support.apple.com/zh-cn/HT207584&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;使用“终端”重新创建融合硬盘&quot;&gt;&lt;a href=</summary>
+      
+    
+    
+    
+    <category term="Mac" scheme="http://yuanzhiying.github.io/categories/Mac/"/>
+    
+    
+    <category term="Mac" scheme="http://yuanzhiying.github.io/tags/Mac/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo常用命令</title>
