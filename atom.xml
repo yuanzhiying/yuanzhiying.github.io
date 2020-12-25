@@ -6,7 +6,7 @@
   <link href="http://yuanzhiying.github.io/atom.xml" rel="self"/>
   
   <link href="http://yuanzhiying.github.io/"/>
-  <updated>2020-12-24T08:35:02.773Z</updated>
+  <updated>2020-12-25T02:06:31.495Z</updated>
   <id>http://yuanzhiying.github.io/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://yuanzhiying.github.io/2020/12/24/Xcode%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/"/>
     <id>http://yuanzhiying.github.io/2020/12/24/Xcode%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/</id>
     <published>2020-12-24T08:34:00.000Z</published>
-    <updated>2020-12-24T08:35:02.773Z</updated>
+    <updated>2020-12-25T02:06:31.495Z</updated>
     
-    <content type="html"><![CDATA[<p>参考文章：<a href="https://www.jianshu.com/p/9c88b782c6dd">Xcode清除缓存相关文件</a></p>]]></content>
+    <content type="html"><![CDATA[<p>参考文章：<a href="https://www.jianshu.com/p/9c88b782c6dd">Xcode清除缓存相关文件</a></p><h2 id="可删"><a href="#可删" class="headerlink" title="可删"></a>可删</h2><h5 id="1-模拟器运行程序产生的数据-DerivedData-（可删）"><a href="#1-模拟器运行程序产生的数据-DerivedData-（可删）" class="headerlink" title="1. 模拟器运行程序产生的数据(DerivedData)（可删）"></a>1. 模拟器运行程序产生的数据(DerivedData)（可删）</h5><p><code>~/Library/Developer/Xcode/DerivedData</code></p><h5 id="2-Xcode打包产生的app-icon历史版本-Products-（可删）"><a href="#2-Xcode打包产生的app-icon历史版本-Products-（可删）" class="headerlink" title="2. Xcode打包产生的app icon历史版本(Products)（可删）"></a>2. Xcode打包产生的app icon历史版本(Products)（可删）</h5><p><code>~/Library/Developer/Xcode/Products/</code></p><h5 id="3-XCPGDevices-playground-项目缓存-（可删）"><a href="#3-XCPGDevices-playground-项目缓存-（可删）" class="headerlink" title="3. XCPGDevices(playground 项目缓存)（可删）"></a>3. XCPGDevices(playground 项目缓存)（可删）</h5><p><code>~/Library/Developer/XCPGDevices/</code></p><h2 id="选删"><a href="#选删" class="headerlink" title="选删"></a>选删</h2><h5 id="1-Xcode打ipa包的历史记录xcarchive文件（选删）"><a href="#1-Xcode打ipa包的历史记录xcarchive文件（选删）" class="headerlink" title="1. Xcode打ipa包的历史记录xcarchive文件（选删）"></a>1. Xcode打ipa包的历史记录xcarchive文件（选删）</h5><p><code>~/Library/Developer/Xcode/Archives</code></p><h5 id="2-设备支持文件-DeviceSupport-（选删）"><a href="#2-设备支持文件-DeviceSupport-（选删）" class="headerlink" title="2. 设备支持文件(DeviceSupport)（选删）"></a>2. 设备支持文件(DeviceSupport)（选删）</h5><p><code>~/Library/Developer/Xcode/iOS DeviceSupport</code></p><h5 id="3-证书描述文件（选删）"><a href="#3-证书描述文件（选删）" class="headerlink" title="3. 证书描述文件（选删）"></a>3. 证书描述文件（选删）</h5><p><code>~/Library/MobileDevice/Provisioning Profiles</code></p><h5 id="4-模拟器文件（选删）"><a href="#4-模拟器文件（选删）" class="headerlink" title="4. 模拟器文件（选删）"></a>4. 模拟器文件（选删）</h5><p><code>~/Library/Developer/CoreSimulator/Profiles/Devices/</code></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;参考文章：&lt;a href=&quot;https://www.jianshu.com/p/9c88b782c6dd&quot;&gt;Xcode清除缓存相关文件&lt;/a&gt;&lt;/p&gt;
-</summary>
+&lt;h2 id=&quot;可删&quot;&gt;&lt;a href=&quot;#可删&quot; class=&quot;headerlink&quot; title=&quot;可删&quot;&gt;&lt;/a&gt;可</summary>
       
     
     
