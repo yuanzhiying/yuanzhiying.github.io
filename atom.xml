@@ -6,7 +6,7 @@
   <link href="http://yuanzhiying.github.io/atom.xml" rel="self"/>
   
   <link href="http://yuanzhiying.github.io/"/>
-  <updated>2021-01-13T10:04:37.735Z</updated>
+  <updated>2021-01-13T10:08:24.702Z</updated>
   <id>http://yuanzhiying.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yuanzhiying.github.io/2021/01/13/SwiftUI-%E4%B8%AD%E7%9A%84some%E5%85%B3%E9%94%AE%E5%AD%97/"/>
     <id>http://yuanzhiying.github.io/2021/01/13/SwiftUI-%E4%B8%AD%E7%9A%84some%E5%85%B3%E9%94%AE%E5%AD%97/</id>
     <published>2021-01-13T10:03:43.000Z</published>
-    <updated>2021-01-13T10:04:37.735Z</updated>
+    <updated>2021-01-13T10:08:24.702Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://www.jianshu.com/p/6eef60ab14bc">SwiftUI 中的some关键字</a></p>]]></content>
     
@@ -34,6 +34,16 @@
     
     
     
+    <category term="iOS" scheme="http://yuanzhiying.github.io/categories/iOS/"/>
+    
+    <category term="Swift" scheme="http://yuanzhiying.github.io/categories/iOS/Swift/"/>
+    
+    
+    <category term="iOS" scheme="http://yuanzhiying.github.io/tags/iOS/"/>
+    
+    <category term="Swift" scheme="http://yuanzhiying.github.io/tags/Swift/"/>
+    
+    <category term="SwiftUI" scheme="http://yuanzhiying.github.io/tags/SwiftUI/"/>
     
   </entry>
   
