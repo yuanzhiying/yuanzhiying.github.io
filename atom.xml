@@ -6,7 +6,7 @@
   <link href="http://yuanzhiying.github.io/atom.xml" rel="self"/>
   
   <link href="http://yuanzhiying.github.io/"/>
-  <updated>2021-01-13T10:08:24.702Z</updated>
+  <updated>2021-01-14T02:27:29.027Z</updated>
   <id>http://yuanzhiying.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SwiftUI学习</title>
+    <link href="http://yuanzhiying.github.io/2021/01/14/SwiftUI%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://yuanzhiying.github.io/2021/01/14/SwiftUI%E5%AD%A6%E4%B9%A0/</id>
+    <published>2021-01-14T01:51:25.000Z</published>
+    <updated>2021-01-14T02:27:29.027Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">struct ContentView: View &#123;</span><br><span class="line">    var body: some View &#123;</span><br><span class="line">        Text(&quot;Hello, world!&quot;)</span><br><span class="line">            .font(.title)</span><br><span class="line">            .foregroundColor(.yellow)</span><br><span class="line">            .bold()</span><br><span class="line">            .italic()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">struct ContentView_Previews: PreviewProvider &#123;</span><br><span class="line">    static var previews: some View &#123;</span><br><span class="line">        ContentView()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol><li><code>ContentView</code>为布局，<code>ContentView_Previews</code>为预览布局</li><li><code>body</code>为计算属性，类型为不透明类型的<code>View</code>，不透明类型使用<code>some</code>修饰</li><li><code>Swift</code>语法，只有一行代码，<code>return</code>可以省略</li><li><code>some</code>修饰，表示不透明类型，总会返回某一个特定的类型，但是不知道是哪一种<blockquote><ol><li>可以返回关联类型的协议类型</li><li>安全性：不对外暴露具体的返回类型</li><li>用来解决SwiftUI的不透明类型</li></ol></blockquote></li><li></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;代码解析&quot;&gt;&lt;a href=&quot;#代码解析&quot; class=&quot;headerlink&quot; title=&quot;代码解析&quot;&gt;&lt;/a&gt;代码解析&lt;/h6&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr</summary>
+      
+    
+    
+    
+    <category term="Swift" scheme="http://yuanzhiying.github.io/categories/Swift/"/>
+    
+    <category term="SwiftUI" scheme="http://yuanzhiying.github.io/categories/Swift/SwiftUI/"/>
+    
+    
+    <category term="Swift" scheme="http://yuanzhiying.github.io/tags/Swift/"/>
+    
+    <category term="SwiftUI" scheme="http://yuanzhiying.github.io/tags/SwiftUI/"/>
+    
+  </entry>
   
   <entry>
     <title>SwiftUI 中的some关键字</title>
