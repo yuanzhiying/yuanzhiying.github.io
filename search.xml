@@ -158,11 +158,10 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
 <ol>
 <li>可以返回关联类型的协议类型</li>
 <li>安全性：不对外暴露具体的返回类型</li>
-<li>用来解决SwiftUI的不透明类型</li>
+<li>用来解决<code>SwiftUI</code>繁琐的不确定返回类型问题</li>
 </ol>
 </blockquote>
 </li>
-<li></li>
 </ol>
 ]]></content>
       <categories>
