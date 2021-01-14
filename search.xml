@@ -163,6 +163,32 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
 </blockquote>
 </li>
 </ol>
+<h6 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h6><ol>
+<li>control + option + 点击：出现属性编辑器</li>
+<li>command + 点击：出现快捷菜单</li>
+</ol>
+<h6 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h6><ol>
+<li>VStack - 垂直布局</li>
+<li>HStack - 水平布局</li>
+<li>Spacer - 间距</li>
+<li>Text - 文本</li>
+<li>Image - 图片</li>
+<li>Divider - 分割线</li>
+</ol>
+<h6 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h6><ol>
+<li>可以在右上角+里拖动空间到代码中</li>
+<li>使用<code>import</code>导入所需的库</li>
+<li>可以新建<code>SwiftUI View</code></li>
+<li><code>ignoresSafeArea</code>忽略<code>safeArea</code>的边距，用在<code>feame</code>前</li>
+<li>布局group组件可增加<code>padding</code></li>
+<li><code>VStack</code>可添加<code>font</code>、<code>foregroundColor</code>等属性</li>
+<li></li>
+</ol>
+<h6 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h6><ol>
+<li><code>@State</code>：<br>使用@State属性为应用程序中的数据建立一个真实来源，您可以从多个视图中修改这些数据。SwiftUI管理底层存储并根据值自动更新视图。</li>
+<li><code>$变量</code>：<br>绑定数据</li>
+<li></li>
+</ol>
 ]]></content>
       <categories>
         <category>Swift</category>
