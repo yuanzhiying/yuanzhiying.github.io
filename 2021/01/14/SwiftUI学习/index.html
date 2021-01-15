@@ -22,15 +22,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"yuanzhiying.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="学习文章：八个常见的SwiftUI误用及对应的正确打开方式SwiftUI 基础之 Identifiable 代码解析123456789101112131415struct ContentView: View &amp;#123;    var body: some View &amp;#123;        Text(&quot;Hello, world!&quot;)            .font(.ti">
+<meta name="description" content="学习文章：八个常见的SwiftUI误用及对应的正确打开方式SwiftUI 基础之 Identifiable 快捷键 control + option + 点击：出现属性编辑器 command + 点击：出现快捷菜单  布局 VStack - 垂直布局 HStack - 水平布局 Spacer - 间距 Text - 文本 Image - 图片 Divider - 分割线 Group - 预览窗口预">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SwiftUI学习">
 <meta property="og:url" content="http://yuanzhiying.github.io/2021/01/14/SwiftUI%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="yuanzhiying的博客">
-<meta property="og:description" content="学习文章：八个常见的SwiftUI误用及对应的正确打开方式SwiftUI 基础之 Identifiable 代码解析123456789101112131415struct ContentView: View &amp;#123;    var body: some View &amp;#123;        Text(&quot;Hello, world!&quot;)            .font(.ti">
+<meta property="og:description" content="学习文章：八个常见的SwiftUI误用及对应的正确打开方式SwiftUI 基础之 Identifiable 快捷键 control + option + 点击：出现属性编辑器 command + 点击：出现快捷菜单  布局 VStack - 垂直布局 HStack - 水平布局 Spacer - 间距 Text - 文本 Image - 图片 Divider - 分割线 Group - 预览窗口预">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-14T01:51:25.000Z">
-<meta property="article:modified_time" content="2021-01-14T09:59:45.431Z">
+<meta property="article:modified_time" content="2021-01-15T09:11:58.837Z">
 <meta property="article:author" content="yuanzhiying">
 <meta property="article:tag" content="Swift">
 <meta property="article:tag" content="SwiftUI">
@@ -188,7 +188,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90"><span class="nav-number">1.</span> <span class="nav-text">代码解析</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">2.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%B8%83%E5%B1%80"><span class="nav-number">3.</span> <span class="nav-text">布局</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="nav-number">4.</span> <span class="nav-text">使用技巧</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7"><span class="nav-number">5.</span> <span class="nav-text">属性</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">1.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%B8%83%E5%B1%80"><span class="nav-number">2.</span> <span class="nav-text">布局</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90"><span class="nav-number">3.</span> <span class="nav-text">代码解析</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="nav-number">4.</span> <span class="nav-text">使用技巧</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -284,10 +284,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-01-14 09:51:25 / 修改时间：17:59:45" itemprop="dateCreated datePublished" datetime="2021-01-14T09:51:25+08:00">2021-01-14</time>
+      <time title="创建时间：2021-01-14 09:51:25" itemprop="dateCreated datePublished" datetime="2021-01-14T09:51:25+08:00">2021-01-14</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-01-15 17:11:58" itemprop="dateModified" datetime="2021-01-15T17:11:58+08:00">2021-01-15</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -313,14 +319,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>3.2k</span>
+      <span>5.3k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
+      <span>5 分钟</span>
     </span>
 </div>
 
@@ -332,6 +338,22 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>学习文章：<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/343549752">八个常见的SwiftUI误用及对应的正确打开方式</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/8d5e0f80856b">SwiftUI 基础之 Identifiable</a></p>
+<h6 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h6><ol>
+<li>control + option + 点击：出现属性编辑器</li>
+<li>command + 点击：出现快捷菜单</li>
+</ol>
+<h6 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h6><ol>
+<li>VStack - 垂直布局</li>
+<li>HStack - 水平布局</li>
+<li>Spacer - 间距</li>
+<li>Text - 文本</li>
+<li>Image - 图片</li>
+<li>Divider - 分割线</li>
+<li>Group - 预览窗口预览多个</li>
+<li>ScrollView - 滚动视图</li>
+<li>Path - 路径</li>
+<li>Shaper - 形状</li>
+</ol>
 <h6 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">struct ContentView: View &#123;</span><br><span class="line">    var body: some View &#123;</span><br><span class="line">        Text(&quot;Hello, world!&quot;)</span><br><span class="line">            .font(.title)</span><br><span class="line">            .foregroundColor(.yellow)</span><br><span class="line">            .bold()</span><br><span class="line">            .italic()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">struct ContentView_Previews: PreviewProvider &#123;</span><br><span class="line">    static var previews: some View &#123;</span><br><span class="line">        ContentView()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ol>
 <li><code>ContentView</code>为布局，<code>ContentView_Previews</code>为预览布局</li>
@@ -346,41 +368,59 @@
 </blockquote>
 </li>
 </ol>
-<h6 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h6><ol>
-<li>control + option + 点击：出现属性编辑器</li>
-<li>command + 点击：出现快捷菜单</li>
-</ol>
-<h6 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h6><ol>
-<li>VStack - 垂直布局</li>
-<li>HStack - 水平布局</li>
-<li>Spacer - 间距</li>
-<li>Text - 文本</li>
-<li>Image - 图片</li>
-<li>Divider - 分割线</li>
-<li>Group - 预览窗口预览多个</li>
-<li>ScrollView - 滚动视图</li>
-</ol>
 <h6 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h6><ol>
-<li>可以在右上角+里拖动空间到代码中</li>
-<li>使用<code>import</code>导入所需的库</li>
-<li>可以新建<code>SwiftUI View</code></li>
-<li><code>ignoresSafeArea</code>忽略<code>safeArea</code>的边距，用在<code>feame</code>前</li>
-<li>布局group组件可增加<code>padding</code></li>
-<li><code>VStack</code>可添加<code>font</code>、<code>foregroundColor</code>等属性，对所有包含的元素起效</li>
-<li>串联属性，每一个点语法属性，返回当前对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Text(&quot;Hello world!&quot;)</span><br><span class="line">   .font(.title)</span><br><span class="line">   .foregroundColor(.purple)</span><br><span class="line">   </span><br><span class="line">A modifier returns a view that applies a new behavior or visual change. You can chain multiple modifiers to achieve the effects you need.</span><br></pre></td></tr></table></figure></li>
-<li>使用<code>previewLayout</code>可以定义预览的窗口的大小，也可以使用<code>Group</code>同时预览多个窗口，通用属性可以提取到外面<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">struct LandmarkRow_Previews: PreviewProvider &#123;</span><br><span class="line">    static var previews: some View &#123;</span><br><span class="line">        Group &#123;</span><br><span class="line">            LandmarkRow(landmark: landmarks[0])</span><br><span class="line">            LandmarkRow(landmark: landmarks[1])</span><br><span class="line">        &#125;</span><br><span class="line">        .previewLayout(.fixed(width: 300, height: 70))</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><code>Identifiable</code>：作为唯一标识<br>遍历需要唯一标识来遍历，如下：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">List(landmarks, id: \.id) &#123; landmark in</span><br><span class="line">    NavigationLink(</span><br><span class="line">        destination: LandmarkDetail()) &#123;</span><br><span class="line">        LandmarkRow(landmark: landmark)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-如果让列表中元素遵守<code>Identifiable</code>协议，遍历处即可省略<code>id</code>参数，model中需要有名称为<code>id</code>的属性<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">struct Landmark: Hashable, Codable, Identifiable &#123;</span><br><span class="line">    var id: Int</span><br><span class="line">    var name: String</span><br></pre></td></tr></table></figure></li>
-<li>页面跳转使用<code>NavigationLink</code>，<code>destination</code>为要跳转的页面<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">NavigationLink(destination: LandmarkDetail()) &#123;</span><br><span class="line">    LandmarkRow(landmark: landmark)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>使用<code>NavigationView</code>为页面田健导航栏，可设置 <code>navigationTitle</code>等<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">NavigationView &#123;</span><br><span class="line">    List(landmarks) &#123; landmark in</span><br><span class="line">        NavigationLink(destination: LandmarkDetail()) &#123;</span><br><span class="line">            LandmarkRow(landmark: landmark)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    .navigationTitle(&quot;Landmarks&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>预览窗口按钮作用：<br>第一个按钮：<code>Live Preview</code> 和<code>Debug Preview</code>，未打开只能查看页面，不能点击等，打开之后可以点击跳转页面等交互操作<br>第二个按钮：<code>Preview On Device</code>，连上真机点击之后，预览可以同步在真机上展示<br>第三个按钮：<code>Inspect Preview</code>，可以打开窗口属性窗口，可以设置预览窗口属性<br>第四个按钮：<code>Duplicate Preview</code> ，可以复制创建多个预览窗口</li>
-<li>代码控制预览的机型<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">struct LandmarkList_Previews: PreviewProvider &#123;</span><br><span class="line">    static var previews: some View &#123;</span><br><span class="line">        LandmarkList()</span><br><span class="line">            .previewDevice(PreviewDevice(rawValue: &quot;iPhone SE (2nd generation)&quot;))</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 多设备同时预览</span><br><span class="line">struct LandmarkList_Previews: PreviewProvider &#123;</span><br><span class="line">    static var previews: some View &#123;</span><br><span class="line">        ForEach([&quot;iPhone 8&quot;, &quot;iPhone 12 Pro Max&quot;], id: \.self) &#123; deviceName in</span><br><span class="line">            LandmarkList()</span><br><span class="line">                .previewDevice(PreviewDevice(rawValue: deviceName))</span><br><span class="line">                .previewDisplayName(deviceName)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>组合静态的<code>View</code>和动态的<code>view</code>到<code>List</code>里，可使用<code>List + ForEach</code>：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">List(filteredLandmarks) &#123; landmark in</span><br><span class="line">    NavigationLink(destination: LandmarkDetail(landmark: landmark)) &#123;</span><br><span class="line">        LandmarkRow(landmark: landmark)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">替换为</span><br><span class="line"></span><br><span class="line">List &#123;</span><br><span class="line">    Toggle(isOn: $showFavoriteOnly) &#123;</span><br><span class="line">        Text(&quot;Favorites only&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">    ForEach(filteredLandmarks) &#123; landmark in</span><br><span class="line">        NavigationLink(destination: LandmarkDetail(landmark: landmark)) &#123;</span><br><span class="line">            LandmarkRow(landmark: landmark)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li></li>
+<li><p>可以在右上角+里拖动空间到代码中</p>
+</li>
+<li><p>使用<code>import</code>导入所需的库</p>
+</li>
+<li><p>可以新建<code>SwiftUI View</code></p>
+</li>
+<li><p><code>ignoresSafeArea</code>忽略<code>safeArea</code>的边距，用在<code>feame</code>前</p>
+</li>
+<li><p>布局group组件可增加<code>padding</code></p>
+</li>
+<li><p><code>VStack</code>可添加<code>font</code>、<code>foregroundColor</code>等属性，对所有包含的元素起效</p>
+</li>
+<li><p>串联属性，每一个点语法属性，返回当前对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Text(&quot;Hello world!&quot;)</span><br><span class="line">   .font(.title)</span><br><span class="line">   .foregroundColor(.purple)</span><br><span class="line">   </span><br><span class="line">A modifier returns a view that applies a new behavior or visual change. You can chain multiple modifiers to achieve the effects you need.</span><br></pre></td></tr></table></figure></li>
+<li><p>使用<code>previewLayout</code>可以定义预览的窗口的大小，也可以使用<code>Group</code>同时预览多个窗口，通用属性可以提取到外面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">struct LandmarkRow_Previews: PreviewProvider &#123;</span><br><span class="line">    static var previews: some View &#123;</span><br><span class="line">        Group &#123;</span><br><span class="line">            LandmarkRow(landmark: landmarks[0])</span><br><span class="line">            LandmarkRow(landmark: landmarks[1])</span><br><span class="line">        &#125;</span><br><span class="line">        .previewLayout(.fixed(width: 300, height: 70))</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>Identifiable</code>：作为唯一标识<br>遍历需要唯一标识来遍历，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">List(landmarks, id: \.id) &#123; landmark in</span><br><span class="line">    NavigationLink(</span><br><span class="line">        destination: LandmarkDetail()) &#123;</span><br><span class="line">        LandmarkRow(landmark: landmark)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果让列表中元素遵守<code>Identifiable</code>协议，遍历处即可省略<code>id</code>参数，model中需要有名称为<code>id</code>的属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">struct Landmark: Hashable, Codable, Identifiable &#123;</span><br><span class="line">    var id: Int</span><br><span class="line">    var name: String</span><br></pre></td></tr></table></figure></li>
+<li><p>页面跳转使用<code>NavigationLink</code>，<code>destination</code>为要跳转的页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">NavigationLink(destination: LandmarkDetail()) &#123;</span><br><span class="line">    LandmarkRow(landmark: landmark)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>使用<code>NavigationView</code>为页面田健导航栏，可设置 <code>navigationTitle</code>等</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">NavigationView &#123;</span><br><span class="line">    List(landmarks) &#123; landmark in</span><br><span class="line">        NavigationLink(destination: LandmarkDetail()) &#123;</span><br><span class="line">            LandmarkRow(landmark: landmark)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    .navigationTitle(&quot;Landmarks&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>预览窗口按钮作用：<br>第一个按钮：<code>Live Preview</code> 和<code>Debug Preview</code>，未打开只能查看页面，不能点击等，打开之后可以点击跳转页面等交互操作<br>第二个按钮：<code>Preview On Device</code>，连上真机点击之后，预览可以同步在真机上展示<br>第三个按钮：<code>Inspect Preview</code>，可以打开窗口属性窗口，可以设置预览窗口属性<br>第四个按钮：<code>Duplicate Preview</code> ，可以复制创建多个预览窗口</p>
+</li>
+<li><p>代码控制预览的机型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">struct LandmarkList_Previews: PreviewProvider &#123;</span><br><span class="line">    static var previews: some View &#123;</span><br><span class="line">        LandmarkList()</span><br><span class="line">            .previewDevice(PreviewDevice(rawValue: &quot;iPhone SE (2nd generation)&quot;))</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 多设备同时预览</span><br><span class="line">struct LandmarkList_Previews: PreviewProvider &#123;</span><br><span class="line">    static var previews: some View &#123;</span><br><span class="line">        ForEach([&quot;iPhone 8&quot;, &quot;iPhone 12 Pro Max&quot;], id: \.self) &#123; deviceName in</span><br><span class="line">            LandmarkList()</span><br><span class="line">                .previewDevice(PreviewDevice(rawValue: deviceName))</span><br><span class="line">                .previewDisplayName(deviceName)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>组合静态的<code>View</code>和动态的<code>view</code>到<code>List</code>里，可使用<code>List + ForEach</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">List(filteredLandmarks) &#123; landmark in</span><br><span class="line">    NavigationLink(destination: LandmarkDetail(landmark: landmark)) &#123;</span><br><span class="line">        LandmarkRow(landmark: landmark)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">替换为</span><br><span class="line"></span><br><span class="line">List &#123;</span><br><span class="line">    Toggle(isOn: $showFavoriteOnly) &#123;</span><br><span class="line">        Text(&quot;Favorites only&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">    ForEach(filteredLandmarks) &#123; landmark in</span><br><span class="line">        NavigationLink(destination: LandmarkDetail(landmark: landmark)) &#123;</span><br><span class="line">            LandmarkRow(landmark: landmark)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果遍历的对象没有实现<code>Identifiable</code>协议，则需要传<code>id</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">List &#123;</span><br><span class="line">    ForEach(modelData.categories.keys.sorted(), id: \.self) &#123; key in</span><br><span class="line">        Text(key)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>ObservableObject</code>协议<br>当遵守<code>ObservableObject</code>协议的数据更新时，绑定数据的<code>view</code>会自动更新</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">final class ModelData: ObservableObject &#123;</span><br><span class="line">    @Published var landmarks: [Landmark] &#x3D; load(&quot;landmarkData.json&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>@Published</code><br>使用<code>@Published</code>修饰监听对象的属性，表示该对象的属性需要把属性值的改变更新进去</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">final class ModelData: ObservableObject &#123;</span><br><span class="line">    @Published var landmarks: [Landmark] &#x3D; load(&quot;landmarkData.json&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>@StateObject</code><br>使用<code>@StateObject</code>初始化一个监听对象的数据，<br>使用<code>.environmentObject</code>把数据设置到环境对象里，<br>在需要的地方去取环境对象<code>@EnvironmentObject var modelData: ModelData</code>进行使用</p>
+</li>
 </ol>
-<h6 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h6><ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">@main</span><br><span class="line">struct MySwiftUIApp: App &#123;</span><br><span class="line">    &#x2F;&#x2F; 定义</span><br><span class="line">    @StateObject private var modelData &#x3D; ModelData()</span><br><span class="line">    </span><br><span class="line">    var body: some Scene &#123;</span><br><span class="line">        WindowGroup &#123;</span><br><span class="line">            ContentView()</span><br><span class="line">            &#x2F;&#x2F; 设置</span><br><span class="line">                .environmentObject(modelData)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 取</span><br><span class="line">@EnvironmentObject var modelData: ModelData</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 使用</span><br><span class="line">modelData.landmarks</span><br></pre></td></tr></table></figure>
+<ol start="18">
+<li><code>Bool</code>的<code>toggle()</code>方法：在<code>true</code>和<code>false</code>之前切换</li>
+<li><code>@EnvironmentObject</code>属性用于在下级view中接收传递过来的参数</li>
+<li><code>environmentObject(_:) </code>方法用于向下级传递参数</li>
+<li><code>@Binding</code>：绑定修饰符用于修饰一个值，这个值用来改变另外一个值<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">绑定：</span><br><span class="line">@Binding var isSet: Bool</span><br><span class="line"></span><br><span class="line">修改：</span><br><span class="line">FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)</span><br></pre></td></tr></table></figure></li>
+<li>定义有状态的字段，使用<code>@State</code>修饰，定义为<code>private</code>，并且赋初始值<br><code>@State private var showFavoritesOnly = false</code></li>
 <li><code>@State</code>：<br>使用@State属性为应用程序中的数据建立一个真实来源，您可以从多个视图中修改这些数据。SwiftUI管理底层存储并根据值自动更新视图。</li>
-<li><code>$变量</code>：<br>绑定数据</li>
+<li>使用<code>Path</code>直接绘制，可以当做View来使用</li>
+<li><code>View</code>动画，包括颜色、透明度、旋转、大小和其他属性等，可以使用<code>withAnimation</code>来包裹状态State实现动画<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">withAnimation &#123;</span><br><span class="line">    self.showDetail.toggle()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">withAnimation(.easeInOut(duration: 4)) &#123;</span><br><span class="line">    self.showDetail.toggle()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>调用<code>View</code>的<code>transition</code>可以为<code>View</code>添加动画<br><code>HikeDetail(hike: hike).transition(.slide)</code><br>自定义<code>transition</code>可自定义动画<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">extension AnyTransition &#123;</span><br><span class="line">    static var moveAndFade: AnyTransition &#123;</span><br><span class="line">        AnyTransition.slide</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">extension AnyTransition &#123;</span><br><span class="line">    static var moveAndFade: AnyTransition &#123;</span><br><span class="line">        AnyTransition.move(edge: .trailing)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">extension AnyTransition &#123;</span><br><span class="line">    static var moveAndFade: AnyTransition &#123;</span><br><span class="line">        let insertion &#x3D; AnyTransition.move(edge: .trailing).combined(with: .opacity)</span><br><span class="line">        let removal &#x3D; AnyTransition.scale.combined(with: .opacity)</span><br><span class="line">        return .asymmetric(insertion: insertion, removal: removal)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li></li>
 </ol>
 
     </div>
@@ -483,14 +523,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">11k</span>
+    <span title="站点总字数">13k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">10 分钟</span>
+    <span title="站点阅读时长">12 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
