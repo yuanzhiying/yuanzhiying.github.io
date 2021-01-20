@@ -3,6 +3,7 @@ title: Xcode清除缓存相关文件
 date: 2020-12-24 16:34:00
 tags:
 categories:
+- Mac
 description:
 ---
 参考文章：[Xcode清除缓存相关文件](https://www.jianshu.com/p/9c88b782c6dd)

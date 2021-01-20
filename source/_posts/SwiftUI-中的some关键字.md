@@ -6,7 +6,6 @@ tags:
 - Swift
 - SwiftUI
 categories:
-- iOS
 - Swift
 description:
 ---
