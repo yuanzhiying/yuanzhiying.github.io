@@ -10,8 +10,12 @@ description:
 ---
 
 学习文章：
+[SwiftUI对比Flutter](https://blog.csdn.net/weixin_33701617/article/details/93164551?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control)
 [八个常见的SwiftUI误用及对应的正确打开方式](https://zhuanlan.zhihu.com/p/343549752)
 [SwiftUI 基础之 Identifiable](https://www.jianshu.com/p/8d5e0f80856b)
+
+- `SwiftUI`要求
+1. iOS13.0+
 
 ###### 快捷键
 1. control + option + 点击：出现属性编辑器
@@ -260,4 +264,20 @@ extension AnyTransition {
     }
 }
 ```
-25. 
+25. `ListRowInsets`用来调整一个view在lsit中的上下左右间距
+26. `CaseIterable`，用在`enum`中用来获取`allCases`方法
+27. `@Environment`，SwiftUI提供了在环境中值的存储，使用`@Environment`可以访问值，并可以读写
+```
+@Environment(\.editMode) var editMode
+```
+28. `@State` 、`@ObservableObject`、`@Binding`、`@EnvironmentObject`区别
+@State和@ObservableObject之间有一些细微的差异。这些都是很重要的，因为它们都有不同的用途。
+@State在视图本地。值或数据在视图中本地保存。它由框架管理，由于它存储在本地，因此它是一个值类型。
+@ObservableObject在视图外部，并且不存储在视图中。它是一种引用类型，因为它不在本地存储，而只是具有对该值的引用。这不是由框架自动管理的，而是开发人员的责任。这最适用于外部数据，例如数据库或由代码管理的模型。
+@Binding也在视图内，但是与@State区别在于@Binding用于不通视图之间的参数传递。@Binding和@ObservedObbjecg一样都是传递引用。
+@EnvironmentObject 可以理解为全局变量
+29. `ObservableObject`和`@Published`
+遵循 ObservableObject 协议的类可以使用 SwiftUI 的 @Published 属性包装器来自动发布属性的变化，以便使用该类的实例的任何视图能够自动重新调用 body 属性，保持界面与数据的一致。
+`@Published var profile = Profile.default`
+界面中使用`@Binding`来绑定UI
+``
