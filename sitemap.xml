@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yuanzhiying.github.io/2021/01/22/SwiftUI%E4%B8%8E%E5%8E%9F%E9%A1%B9%E7%9B%AE%E6%B7%B7%E7%94%A8/</loc>
+    
+    <lastmod>2021-01-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yuanzhiying.github.io/2021/01/14/SwiftUI%E5%AD%A6%E4%B9%A0/</loc>
     
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     
   </url>
   
@@ -74,7 +81,7 @@
 
   <url>
     <loc>http://yuanzhiying.github.io/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -82,49 +89,49 @@
   
   <url>
     <loc>http://yuanzhiying.github.io/tags/Flutter/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/tags/Dart/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/tags/hexo/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/tags/Mac/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/tags/iOS/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/tags/Swift/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/tags/SwiftUI/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -133,28 +140,28 @@
   
   <url>
     <loc>http://yuanzhiying.github.io/categories/Flutter/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/categories/hexo/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/categories/Mac/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yuanzhiying.github.io/categories/Swift/</loc>
-    <lastmod>2021-01-15</lastmod>
+    <lastmod>2021-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

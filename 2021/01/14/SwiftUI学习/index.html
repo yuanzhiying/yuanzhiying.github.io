@@ -30,7 +30,7 @@
 <meta property="og:description" content="学习文章：八个常见的SwiftUI误用及对应的正确打开方式SwiftUI 基础之 Identifiable 快捷键 control + option + 点击：出现属性编辑器 command + 点击：出现快捷菜单  布局 VStack - 垂直布局 HStack - 水平布局 Spacer - 间距 Text - 文本 Image - 图片 Divider - 分割线 Group - 预览窗口预">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-14T01:51:25.000Z">
-<meta property="article:modified_time" content="2021-01-15T09:11:58.837Z">
+<meta property="article:modified_time" content="2021-01-22T05:21:13.610Z">
 <meta property="article:author" content="yuanzhiying">
 <meta property="article:tag" content="Swift">
 <meta property="article:tag" content="SwiftUI">
@@ -130,7 +130,7 @@
         <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">7</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">8</span></a></li>
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
@@ -202,7 +202,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -292,7 +292,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-01-15 17:11:58" itemprop="dateModified" datetime="2021-01-15T17:11:58+08:00">2021-01-15</time>
+        <time title="修改时间：2021-01-22 13:21:13" itemprop="dateModified" datetime="2021-01-22T13:21:13+08:00">2021-01-22</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -319,7 +319,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>5.3k</span>
+      <span>5.4k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -420,6 +420,8 @@
 <li>使用<code>Path</code>直接绘制，可以当做View来使用</li>
 <li><code>View</code>动画，包括颜色、透明度、旋转、大小和其他属性等，可以使用<code>withAnimation</code>来包裹状态State实现动画<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">withAnimation &#123;</span><br><span class="line">    self.showDetail.toggle()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">withAnimation(.easeInOut(duration: 4)) &#123;</span><br><span class="line">    self.showDetail.toggle()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li>调用<code>View</code>的<code>transition</code>可以为<code>View</code>添加动画<br><code>HikeDetail(hike: hike).transition(.slide)</code><br>自定义<code>transition</code>可自定义动画<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">extension AnyTransition &#123;</span><br><span class="line">    static var moveAndFade: AnyTransition &#123;</span><br><span class="line">        AnyTransition.slide</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">extension AnyTransition &#123;</span><br><span class="line">    static var moveAndFade: AnyTransition &#123;</span><br><span class="line">        AnyTransition.move(edge: .trailing)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">extension AnyTransition &#123;</span><br><span class="line">    static var moveAndFade: AnyTransition &#123;</span><br><span class="line">        let insertion &#x3D; AnyTransition.move(edge: .trailing).combined(with: .opacity)</span><br><span class="line">        let removal &#x3D; AnyTransition.scale.combined(with: .opacity)</span><br><span class="line">        return .asymmetric(insertion: insertion, removal: removal)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><code>ListRowInsets</code>用来调整一个view在lsit中的上下左右间距</li>
+<li><code>CaseIterable</code>，用在<code>enum</code>中用来获取<code>allCases</code>方法</li>
 <li></li>
 </ol>
 
@@ -469,6 +471,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2021/01/22/SwiftUI%E4%B8%8E%E5%8E%9F%E9%A1%B9%E7%9B%AE%E6%B7%B7%E7%94%A8/" rel="next" title="SwiftUI与原项目混用">
+                  SwiftUI与原项目混用 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
