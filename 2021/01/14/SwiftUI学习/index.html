@@ -22,15 +22,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"yuanzhiying.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="学习文章：SwiftUI对比Flutter八个常见的SwiftUI误用及对应的正确打开方式SwiftUI 基础之 Identifiable  SwiftUI要求   iOS13.0+  快捷键 control + option + 点击：出现属性编辑器 command + 点击：出现快捷菜单  布局 VStack - 垂直布局 HStack - 水平布局 Spacer - 间距 Text - 文本">
+<meta name="description" content="学习文章：SwiftUI对比Flutter八个常见的SwiftUI误用及对应的正确打开方式SwiftUI 基础之 IdentifiableSwiftUI - Data Binding注解  SwiftUI要求   iOS13.0+  快捷键 control + option + 点击：出现属性编辑器 command + 点击：出现快捷菜单  布局 VStack - 垂直布局 HStack - 水平">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SwiftUI学习">
 <meta property="og:url" content="http://yuanzhiying.github.io/2021/01/14/SwiftUI%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="yuanzhiying的博客">
-<meta property="og:description" content="学习文章：SwiftUI对比Flutter八个常见的SwiftUI误用及对应的正确打开方式SwiftUI 基础之 Identifiable  SwiftUI要求   iOS13.0+  快捷键 control + option + 点击：出现属性编辑器 command + 点击：出现快捷菜单  布局 VStack - 垂直布局 HStack - 水平布局 Spacer - 间距 Text - 文本">
+<meta property="og:description" content="学习文章：SwiftUI对比Flutter八个常见的SwiftUI误用及对应的正确打开方式SwiftUI 基础之 IdentifiableSwiftUI - Data Binding注解  SwiftUI要求   iOS13.0+  快捷键 control + option + 点击：出现属性编辑器 command + 点击：出现快捷菜单  布局 VStack - 垂直布局 HStack - 水平">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-14T01:51:25.000Z">
-<meta property="article:modified_time" content="2021-01-22T07:09:37.873Z">
+<meta property="article:modified_time" content="2021-01-25T05:36:26.966Z">
 <meta property="article:author" content="yuanzhiying">
 <meta property="article:tag" content="Swift">
 <meta property="article:tag" content="SwiftUI">
@@ -292,7 +292,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-01-22 15:09:37" itemprop="dateModified" datetime="2021-01-22T15:09:37+08:00">2021-01-22</time>
+        <time title="修改时间：2021-01-25 13:36:26" itemprop="dateModified" datetime="2021-01-25T13:36:26+08:00">2021-01-25</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -319,14 +319,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>5.9k</span>
+      <span>6.5k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>5 分钟</span>
+      <span>6 分钟</span>
     </span>
 </div>
 
@@ -337,7 +337,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>学习文章：<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_33701617/article/details/93164551?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control">SwiftUI对比Flutter</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/343549752">八个常见的SwiftUI误用及对应的正确打开方式</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/8d5e0f80856b">SwiftUI 基础之 Identifiable</a></p>
+        <p>学习文章：<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_33701617/article/details/93164551?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control">SwiftUI对比Flutter</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/343549752">八个常见的SwiftUI误用及对应的正确打开方式</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/8d5e0f80856b">SwiftUI 基础之 Identifiable</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a2a69fb070b0">SwiftUI - Data Binding注解</a></p>
 <ul>
 <li><code>SwiftUI</code>要求</li>
 </ul>
@@ -429,10 +429,11 @@
 <li><code>ListRowInsets</code>用来调整一个view在lsit中的上下左右间距</li>
 <li><code>CaseIterable</code>，用在<code>enum</code>中用来获取<code>allCases</code>方法</li>
 <li><code>@Environment</code>，SwiftUI提供了在环境中值的存储，使用<code>@Environment</code>可以访问值，并可以读写<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Environment(\.editMode) var editMode</span><br></pre></td></tr></table></figure></li>
-<li><code>@State</code> 、<code>@ObservableObject</code>、<code>@Binding</code>、<code>@EnvironmentObject</code>区别<br>@State和@ObservableObject之间有一些细微的差异。这些都是很重要的，因为它们都有不同的用途。<br>@State在视图本地。值或数据在视图中本地保存。它由框架管理，由于它存储在本地，因此它是一个值类型。<br>@ObservableObject在视图外部，并且不存储在视图中。它是一种引用类型，因为它不在本地存储，而只是具有对该值的引用。这不是由框架自动管理的，而是开发人员的责任。这最适用于外部数据，例如数据库或由代码管理的模型。</li>
+<li><code>@State</code> 、<code>@ObservableObject</code>、<code>@Binding</code>、<code>@EnvironmentObject</code>区别<br>@State和@ObservableObject之间有一些细微的差异。这些都是很重要的，因为它们都有不同的用途。<br>@State在视图本地。值或数据在视图中本地保存。它由框架管理，由于它存储在本地，因此它是一个值类型。<br>@ObservableObject在视图外部，并且不存储在视图中。它是一种引用类型，因为它不在本地存储，而只是具有对该值的引用。这不是由框架自动管理的，而是开发人员的责任。这最适用于外部数据，例如数据库或由代码管理的模型。<br>@Binding也在视图内，但是与@State区别在于@Binding用于不通视图之间的参数传递。@Binding和@ObservedObbjecg一样都是传递引用。<br>@EnvironmentObject 可以理解为全局变量</li>
+<li><code>ObservableObject</code>和<code>@Published</code><br>遵循 ObservableObject 协议的类可以使用 SwiftUI 的 @Published 属性包装器来自动发布属性的变化，以便使用该类的实例的任何视图能够自动重新调用 body 属性，保持界面与数据的一致。<br><code>@Published var profile = Profile.default</code><br>界面中使用<code>@Binding</code>来绑定UI<br>``</li>
+<li>使用<code>UIViewRepresentable</code>来讲<code>UIKit</code>中已有的<code>View</code>在<code>SwiftUI</code>中使用<br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/384867321b67">UIViewRepresentable</a><br>使用方法如下：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import SwiftUI</span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">struct PageControl: UIViewRepresentable &#123;</span><br><span class="line">    var numberOfPages: Int</span><br><span class="line">    @Binding var currentPage: Int</span><br><span class="line">    </span><br><span class="line">    func makeUIView(context: Context) -&gt; UIPageControl &#123;</span><br><span class="line">        let control &#x3D; UIPageControl()</span><br><span class="line">        control.numberOfPages &#x3D; numberOfPages</span><br><span class="line">        return control</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    func updateUIView(_ uiView: UIPageControl, context: Context) &#123;</span><br><span class="line">        uiView.currentPage &#x3D; currentPage</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<p>@Binding也在视图内，但是与@State区别在于@Binding用于不通视图之间的参数传递。@Binding和@ObservedObbjecg一样都是传递引用。</p>
-<p>@EnvironmentObject 可以理解为全局变量</p>
 
     </div>
 
@@ -540,7 +541,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">14k</span>
+    <span title="站点总字数">15k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">

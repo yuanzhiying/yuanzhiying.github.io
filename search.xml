@@ -151,7 +151,7 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
   <entry>
     <title>SwiftUI学习</title>
     <url>/2021/01/14/SwiftUI%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>学习文章：<br><a href="https://blog.csdn.net/weixin_33701617/article/details/93164551?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control">SwiftUI对比Flutter</a><br><a href="https://zhuanlan.zhihu.com/p/343549752">八个常见的SwiftUI误用及对应的正确打开方式</a><br><a href="https://www.jianshu.com/p/8d5e0f80856b">SwiftUI 基础之 Identifiable</a></p>
+    <content><![CDATA[<p>学习文章：<br><a href="https://blog.csdn.net/weixin_33701617/article/details/93164551?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control">SwiftUI对比Flutter</a><br><a href="https://zhuanlan.zhihu.com/p/343549752">八个常见的SwiftUI误用及对应的正确打开方式</a><br><a href="https://www.jianshu.com/p/8d5e0f80856b">SwiftUI 基础之 Identifiable</a><br><a href="https://www.jianshu.com/p/a2a69fb070b0">SwiftUI - Data Binding注解</a></p>
 <ul>
 <li><code>SwiftUI</code>要求</li>
 </ul>
@@ -243,10 +243,11 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
 <li><code>ListRowInsets</code>用来调整一个view在lsit中的上下左右间距</li>
 <li><code>CaseIterable</code>，用在<code>enum</code>中用来获取<code>allCases</code>方法</li>
 <li><code>@Environment</code>，SwiftUI提供了在环境中值的存储，使用<code>@Environment</code>可以访问值，并可以读写<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@Environment(\.editMode) var editMode</span><br></pre></td></tr></table></figure></li>
-<li><code>@State</code> 、<code>@ObservableObject</code>、<code>@Binding</code>、<code>@EnvironmentObject</code>区别<br>@State和@ObservableObject之间有一些细微的差异。这些都是很重要的，因为它们都有不同的用途。<br>@State在视图本地。值或数据在视图中本地保存。它由框架管理，由于它存储在本地，因此它是一个值类型。<br>@ObservableObject在视图外部，并且不存储在视图中。它是一种引用类型，因为它不在本地存储，而只是具有对该值的引用。这不是由框架自动管理的，而是开发人员的责任。这最适用于外部数据，例如数据库或由代码管理的模型。</li>
+<li><code>@State</code> 、<code>@ObservableObject</code>、<code>@Binding</code>、<code>@EnvironmentObject</code>区别<br>@State和@ObservableObject之间有一些细微的差异。这些都是很重要的，因为它们都有不同的用途。<br>@State在视图本地。值或数据在视图中本地保存。它由框架管理，由于它存储在本地，因此它是一个值类型。<br>@ObservableObject在视图外部，并且不存储在视图中。它是一种引用类型，因为它不在本地存储，而只是具有对该值的引用。这不是由框架自动管理的，而是开发人员的责任。这最适用于外部数据，例如数据库或由代码管理的模型。<br>@Binding也在视图内，但是与@State区别在于@Binding用于不通视图之间的参数传递。@Binding和@ObservedObbjecg一样都是传递引用。<br>@EnvironmentObject 可以理解为全局变量</li>
+<li><code>ObservableObject</code>和<code>@Published</code><br>遵循 ObservableObject 协议的类可以使用 SwiftUI 的 @Published 属性包装器来自动发布属性的变化，以便使用该类的实例的任何视图能够自动重新调用 body 属性，保持界面与数据的一致。<br><code>@Published var profile = Profile.default</code><br>界面中使用<code>@Binding</code>来绑定UI<br>``</li>
+<li>使用<code>UIViewRepresentable</code>来讲<code>UIKit</code>中已有的<code>View</code>在<code>SwiftUI</code>中使用<br><a href="https://www.jianshu.com/p/384867321b67">UIViewRepresentable</a><br>使用方法如下：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import SwiftUI</span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">struct PageControl: UIViewRepresentable &#123;</span><br><span class="line">    var numberOfPages: Int</span><br><span class="line">    @Binding var currentPage: Int</span><br><span class="line">    </span><br><span class="line">    func makeUIView(context: Context) -&gt; UIPageControl &#123;</span><br><span class="line">        let control &#x3D; UIPageControl()</span><br><span class="line">        control.numberOfPages &#x3D; numberOfPages</span><br><span class="line">        return control</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    func updateUIView(_ uiView: UIPageControl, context: Context) &#123;</span><br><span class="line">        uiView.currentPage &#x3D; currentPage</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<p>@Binding也在视图内，但是与@State区别在于@Binding用于不通视图之间的参数传递。@Binding和@ObservedObbjecg一样都是传递引用。</p>
-<p>@EnvironmentObject 可以理解为全局变量</p>
 ]]></content>
       <categories>
         <category>Swift</category>
