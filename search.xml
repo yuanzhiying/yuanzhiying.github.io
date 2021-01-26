@@ -58,83 +58,6 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
       </tags>
   </entry>
   <entry>
-    <title>hexo常用命令</title>
-    <url>/2020/12/16/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<ol>
-<li><code>npm install --save hexo-deployer-git</code><br>如果出现<code>ERROR Deployer not found: git</code>报错，可以使用<code>npm install --save hexo-deployer-git</code>命令解决。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>npm、nvm使用国内淘宝源</title>
-    <url>/2020/12/09/npm%E3%80%81nvm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%B7%98%E5%AE%9D%E6%BA%90/</url>
-    <content><![CDATA[<ul>
-<li>npm：</li>
-</ul>
-<ol>
-<li>显示当前的镜像地址：<code>npm get registry</code></li>
-<li>更换为淘宝的镜像地址：<code>npm config set registry http://registry.npm.taobao.org</code></li>
-<li>再次查看当前的镜像地址：<code>npm get registry</code></li>
-</ol>
-<ul>
-<li>nvm：</li>
-</ul>
-<ol>
-<li><code>.bash_profile</code>文件中添加：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export NVM_NODEJS_ORG_MIRROR&#x3D;http:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;node</span><br><span class="line">export NVM_IOJS_ORG_MIRROR&#x3D;http:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;iojs</span><br></pre></td></tr></table></figure></li>
-<li>执行<code>source ~/.bash_profile</code>起效</li>
-</ol>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Xcode清除缓存相关文件</title>
-    <url>/2020/12/24/Xcode%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<p>参考文章：<a href="https://www.jianshu.com/p/9c88b782c6dd">Xcode清除缓存相关文件</a></p>
-<h2 id="可删"><a href="#可删" class="headerlink" title="可删"></a>可删</h2><h5 id="1-模拟器运行程序产生的数据-DerivedData-（可删）"><a href="#1-模拟器运行程序产生的数据-DerivedData-（可删）" class="headerlink" title="1. 模拟器运行程序产生的数据(DerivedData)（可删）"></a>1. 模拟器运行程序产生的数据(DerivedData)（可删）</h5><p><code>~/Library/Developer/Xcode/DerivedData</code></p>
-<h5 id="2-Xcode打包产生的app-icon历史版本-Products-（可删）"><a href="#2-Xcode打包产生的app-icon历史版本-Products-（可删）" class="headerlink" title="2. Xcode打包产生的app icon历史版本(Products)（可删）"></a>2. Xcode打包产生的app icon历史版本(Products)（可删）</h5><p><code>~/Library/Developer/Xcode/Products/</code></p>
-<h5 id="3-XCPGDevices-playground-项目缓存-（可删）"><a href="#3-XCPGDevices-playground-项目缓存-（可删）" class="headerlink" title="3. XCPGDevices(playground 项目缓存)（可删）"></a>3. XCPGDevices(playground 项目缓存)（可删）</h5><p><code>~/Library/Developer/XCPGDevices/</code></p>
-<h2 id="选删"><a href="#选删" class="headerlink" title="选删"></a>选删</h2><h5 id="1-Xcode打ipa包的历史记录xcarchive文件（选删）"><a href="#1-Xcode打ipa包的历史记录xcarchive文件（选删）" class="headerlink" title="1. Xcode打ipa包的历史记录xcarchive文件（选删）"></a>1. Xcode打ipa包的历史记录xcarchive文件（选删）</h5><p><code>~/Library/Developer/Xcode/Archives</code></p>
-<h5 id="2-设备支持文件-DeviceSupport-（选删）"><a href="#2-设备支持文件-DeviceSupport-（选删）" class="headerlink" title="2. 设备支持文件(DeviceSupport)（选删）"></a>2. 设备支持文件(DeviceSupport)（选删）</h5><p><code>~/Library/Developer/Xcode/iOS DeviceSupport</code></p>
-<h5 id="3-证书描述文件（选删）"><a href="#3-证书描述文件（选删）" class="headerlink" title="3. 证书描述文件（选删）"></a>3. 证书描述文件（选删）</h5><p><code>~/Library/MobileDevice/Provisioning Profiles</code></p>
-<h5 id="4-模拟器文件（选删）"><a href="#4-模拟器文件（选删）" class="headerlink" title="4. 模拟器文件（选删）"></a>4. 模拟器文件（选删）</h5><p><code>~/Library/Developer/CoreSimulator/Profiles/Devices/</code></p>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>iMac合并融合硬盘</title>
-    <url>/2020/12/21/iMac%E5%90%88%E5%B9%B6%E8%9E%8D%E5%90%88%E7%A1%AC%E7%9B%98/</url>
-    <content><![CDATA[<p>官方文档：<a href="https://support.apple.com/zh-cn/HT207584">https://support.apple.com/zh-cn/HT207584</a></p>
-<h2 id="使用“终端”重新创建融合硬盘"><a href="#使用“终端”重新创建融合硬盘" class="headerlink" title="使用“终端”重新创建融合硬盘 "></a>使用“终端”重新创建融合硬盘 </h2><p>以下步骤将永久删除融合硬盘所含驱动器上储存的所有数据。在继续之前，请确保您进行了<a href="https://support.apple.com/zh-cn/HT201250">备份</a>。 </p>
-<h3 id="如果您使用的是-macOS-Mojave-或更高版本"><a href="#如果您使用的是-macOS-Mojave-或更高版本" class="headerlink" title="如果您使用的是 macOS Mojave 或更高版本"></a>如果您使用的是 macOS Mojave 或更高版本</h3><ol>
-<li> 将 Mac 开机，然后立即按住 Command-R 以<a href="https://support.apple.com/zh-cn/HT201314">通过 macOS 恢复功能启动</a>。在看到 Apple 标志或旋转的地球时松开这些键。</li>
-<li> 当您看到“macOS 实用工具”窗口时，请从菜单栏中选取“实用工具”&gt;“终端”。</li>
-<li> 在“终端”窗口中键入 <code>diskutil resetFusion</code>，然后按 Return 键。</li>
-<li> 在出现提示时键入 <code>Yes</code>（<em>Y</em> 需要大写），然后按 Return 键。</li>
-<li> 当“终端”指示操作成功时，退出“终端”以返回“macOS 实用工具”窗口。</li>
-<li> 选取“<a href="https://support.apple.com/zh-cn/HT204904">重新安装 macOS</a>”，然后按照屏幕上的说明操作，以重新安装 Mac 操作系统。完成后，Mac 将从您的融合硬盘重新启动。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SwiftUI 中的some关键字</title>
     <url>/2021/01/13/SwiftUI-%E4%B8%AD%E7%9A%84some%E5%85%B3%E9%94%AE%E5%AD%97/</url>
     <content><![CDATA[<p><a href="https://www.jianshu.com/p/6eef60ab14bc">SwiftUI 中的some关键字</a></p>
@@ -280,6 +203,83 @@ dio请求封装中，添加拦截器：<figure class="highlight plain"><table><t
       </categories>
       <tags>
         <tag>Swift</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Xcode清除缓存相关文件</title>
+    <url>/2020/12/24/Xcode%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<p>参考文章：<a href="https://www.jianshu.com/p/9c88b782c6dd">Xcode清除缓存相关文件</a></p>
+<h2 id="可删"><a href="#可删" class="headerlink" title="可删"></a>可删</h2><h5 id="1-模拟器运行程序产生的数据-DerivedData-（可删）"><a href="#1-模拟器运行程序产生的数据-DerivedData-（可删）" class="headerlink" title="1. 模拟器运行程序产生的数据(DerivedData)（可删）"></a>1. 模拟器运行程序产生的数据(DerivedData)（可删）</h5><p><code>~/Library/Developer/Xcode/DerivedData</code></p>
+<h5 id="2-Xcode打包产生的app-icon历史版本-Products-（可删）"><a href="#2-Xcode打包产生的app-icon历史版本-Products-（可删）" class="headerlink" title="2. Xcode打包产生的app icon历史版本(Products)（可删）"></a>2. Xcode打包产生的app icon历史版本(Products)（可删）</h5><p><code>~/Library/Developer/Xcode/Products/</code></p>
+<h5 id="3-XCPGDevices-playground-项目缓存-（可删）"><a href="#3-XCPGDevices-playground-项目缓存-（可删）" class="headerlink" title="3. XCPGDevices(playground 项目缓存)（可删）"></a>3. XCPGDevices(playground 项目缓存)（可删）</h5><p><code>~/Library/Developer/XCPGDevices/</code></p>
+<h2 id="选删"><a href="#选删" class="headerlink" title="选删"></a>选删</h2><h5 id="1-Xcode打ipa包的历史记录xcarchive文件（选删）"><a href="#1-Xcode打ipa包的历史记录xcarchive文件（选删）" class="headerlink" title="1. Xcode打ipa包的历史记录xcarchive文件（选删）"></a>1. Xcode打ipa包的历史记录xcarchive文件（选删）</h5><p><code>~/Library/Developer/Xcode/Archives</code></p>
+<h5 id="2-设备支持文件-DeviceSupport-（选删）"><a href="#2-设备支持文件-DeviceSupport-（选删）" class="headerlink" title="2. 设备支持文件(DeviceSupport)（选删）"></a>2. 设备支持文件(DeviceSupport)（选删）</h5><p><code>~/Library/Developer/Xcode/iOS DeviceSupport</code></p>
+<h5 id="3-证书描述文件（选删）"><a href="#3-证书描述文件（选删）" class="headerlink" title="3. 证书描述文件（选删）"></a>3. 证书描述文件（选删）</h5><p><code>~/Library/MobileDevice/Provisioning Profiles</code></p>
+<h5 id="4-模拟器文件（选删）"><a href="#4-模拟器文件（选删）" class="headerlink" title="4. 模拟器文件（选删）"></a>4. 模拟器文件（选删）</h5><p><code>~/Library/Developer/CoreSimulator/Profiles/Devices/</code></p>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo常用命令</title>
+    <url>/2020/12/16/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<ol>
+<li><code>npm install --save hexo-deployer-git</code><br>如果出现<code>ERROR Deployer not found: git</code>报错，可以使用<code>npm install --save hexo-deployer-git</code>命令解决。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iMac合并融合硬盘</title>
+    <url>/2020/12/21/iMac%E5%90%88%E5%B9%B6%E8%9E%8D%E5%90%88%E7%A1%AC%E7%9B%98/</url>
+    <content><![CDATA[<p>官方文档：<a href="https://support.apple.com/zh-cn/HT207584">https://support.apple.com/zh-cn/HT207584</a></p>
+<h2 id="使用“终端”重新创建融合硬盘"><a href="#使用“终端”重新创建融合硬盘" class="headerlink" title="使用“终端”重新创建融合硬盘 "></a>使用“终端”重新创建融合硬盘 </h2><p>以下步骤将永久删除融合硬盘所含驱动器上储存的所有数据。在继续之前，请确保您进行了<a href="https://support.apple.com/zh-cn/HT201250">备份</a>。 </p>
+<h3 id="如果您使用的是-macOS-Mojave-或更高版本"><a href="#如果您使用的是-macOS-Mojave-或更高版本" class="headerlink" title="如果您使用的是 macOS Mojave 或更高版本"></a>如果您使用的是 macOS Mojave 或更高版本</h3><ol>
+<li> 将 Mac 开机，然后立即按住 Command-R 以<a href="https://support.apple.com/zh-cn/HT201314">通过 macOS 恢复功能启动</a>。在看到 Apple 标志或旋转的地球时松开这些键。</li>
+<li> 当您看到“macOS 实用工具”窗口时，请从菜单栏中选取“实用工具”&gt;“终端”。</li>
+<li> 在“终端”窗口中键入 <code>diskutil resetFusion</code>，然后按 Return 键。</li>
+<li> 在出现提示时键入 <code>Yes</code>（<em>Y</em> 需要大写），然后按 Return 键。</li>
+<li> 当“终端”指示操作成功时，退出“终端”以返回“macOS 实用工具”窗口。</li>
+<li> 选取“<a href="https://support.apple.com/zh-cn/HT204904">重新安装 macOS</a>”，然后按照屏幕上的说明操作，以重新安装 Mac 操作系统。完成后，Mac 将从您的融合硬盘重新启动。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm、nvm使用国内淘宝源</title>
+    <url>/2020/12/09/npm%E3%80%81nvm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%B7%98%E5%AE%9D%E6%BA%90/</url>
+    <content><![CDATA[<ul>
+<li>npm：</li>
+</ul>
+<ol>
+<li>显示当前的镜像地址：<code>npm get registry</code></li>
+<li>更换为淘宝的镜像地址：<code>npm config set registry http://registry.npm.taobao.org</code></li>
+<li>再次查看当前的镜像地址：<code>npm get registry</code></li>
+</ol>
+<ul>
+<li>nvm：</li>
+</ul>
+<ol>
+<li><code>.bash_profile</code>文件中添加：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export NVM_NODEJS_ORG_MIRROR&#x3D;http:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;node</span><br><span class="line">export NVM_IOJS_ORG_MIRROR&#x3D;http:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;iojs</span><br></pre></td></tr></table></figure></li>
+<li>执行<code>source ~/.bash_profile</code>起效</li>
+</ol>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
