@@ -13,6 +13,7 @@ description:
 [SwiftUI对比Flutter](https://blog.csdn.net/weixin_33701617/article/details/93164551?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-2.control)
 [八个常见的SwiftUI误用及对应的正确打开方式](https://zhuanlan.zhihu.com/p/343549752)
 [SwiftUI 基础之 Identifiable](https://www.jianshu.com/p/8d5e0f80856b)
+[SwiftUI - Data Binding注解](https://www.jianshu.com/p/a2a69fb070b0)
 
 - `SwiftUI`要求
 1. iOS13.0+
@@ -281,3 +282,26 @@ extension AnyTransition {
 `@Published var profile = Profile.default`
 界面中使用`@Binding`来绑定UI
 ``
+30. 使用`UIViewRepresentable`来将`UIKit`中已有的`View`在`SwiftUI`中使用
+使用`UIViewControllerRepresentable`来`UIKit`中的`UIViewController`在`SwiftUI`中使用
+[UIViewRepresentable](https://www.jianshu.com/p/384867321b67)
+使用方法如下：
+```
+import SwiftUI
+import UIKit
+
+struct PageControl: UIViewRepresentable {
+    var numberOfPages: Int
+    @Binding var currentPage: Int
+    
+    func makeUIView(context: Context) -> UIPageControl {
+        let control = UIPageControl()
+        control.numberOfPages = numberOfPages
+        return control
+    }
+    
+    func updateUIView(_ uiView: UIPageControl, context: Context) {
+        uiView.currentPage = currentPage
+    }
+}
+```
