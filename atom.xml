@@ -6,7 +6,7 @@
   <link href="http://yuanzhiying.github.io/atom.xml" rel="self"/>
   
   <link href="http://yuanzhiying.github.io/"/>
-  <updated>2021-01-22T05:53:44.944Z</updated>
+  <updated>2021-01-26T03:49:50.352Z</updated>
   <id>http://yuanzhiying.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Swift中associatedtype</title>
+    <link href="http://yuanzhiying.github.io/2021/01/26/Swift%E4%B8%ADassociatedtype/"/>
+    <id>http://yuanzhiying.github.io/2021/01/26/Swift%E4%B8%ADassociatedtype/</id>
+    <published>2021-01-26T03:35:11.000Z</published>
+    <updated>2021-01-26T03:49:50.352Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; associatedtype定义关联类型，相当于类型的占位符，让实现协议的类型来指定具体的类型</span><br><span class="line"></span><br><span class="line">protocol Food &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">protocol Animal &#123;</span><br><span class="line">    associatedtype F: Food</span><br><span class="line">    func eat(_ food: F)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">struct Meat: Food &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">struct Grass: Food &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">struct Tiger: Animal &#123;</span><br><span class="line">    func eat(_ food: Meat) &#123;</span><br><span class="line">        print(&quot;eat \(food)&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">struct Sheep: Animal &#123;</span><br><span class="line">    func eat(_ food: Grass) &#123;</span><br><span class="line">        print(&quot;eat \(food)&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func test() &#123;</span><br><span class="line">    let tiger &#x3D; Tiger()</span><br><span class="line">    tiger.eat(Meat())</span><br><span class="line"></span><br><span class="line">    let sheep &#x3D; Sheep()</span><br><span class="line">    sheep.eat(Grass())</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*</span><br><span class="line"></span><br><span class="line">Protocol &#39;Animal&#39; can only be used as a generic constraint because it has Self or associated type requirements</span><br><span class="line">只能被用作泛型约束，不能当做独立的类型使用</span><br><span class="line"> </span><br><span class="line">错误代码：</span><br><span class="line">func isTiger(animal: Animal) -&gt; Bool &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">*&#x2F;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 具有关联类型的协议类型，只能当做泛型约束使用</span><br><span class="line">func isTiger&lt;A: Animal&gt;(animal: A) -&gt; Bool &#123;</span><br><span class="line">    if animal is Tiger &#123;</span><br><span class="line">        return true</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        return false</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class</summary>
+      
+    
+    
+    
+    <category term="Swift" scheme="http://yuanzhiying.github.io/categories/Swift/"/>
+    
+    
+    <category term="Swift" scheme="http://yuanzhiying.github.io/tags/Swift/"/>
+    
+  </entry>
   
   <entry>
     <title>SwiftUI与原项目混用</title>
